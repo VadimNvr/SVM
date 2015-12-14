@@ -50,7 +50,6 @@ pipeline = make_pipeline(feature_extractor, LinearSVC(C=2))
 scores = cross_validation.cross_val_score(pipeline, train_data, train_lbls, cv=5, scoring='f1_macro')
 print(mean(scores))
 
-#print(test_tokenizer("hello fucking dear friend"))
 
 
 
